@@ -29,41 +29,24 @@ import androidx.compose.ui.unit.sp
 import com.example.myapplication.R
 
 @Composable
-fun TataLetakBoxColumnRow(modifier: Modifier) {
-    Column(
-        modifier = modifier
-            .padding(top = 30.dp, start = 20.dp, end = 20.dp)
-    ) {
-        Text(text = "NIM: 123456789")
-        Text(text = "Nama: Mahasiswa 1")
-        Text(text = "Kelas: IF-1")
-    }
-}
-
-@Composable
 fun TataLetakColumn(modifier: Modifier) {
-    Column(
-        modifier = modifier.fillMaxWidth(),
-        verticalArrangement = Arrangement.SpaceEvenly
-    ) {
-        Text(text = "Kolom 1")
-        Text(text = "Kolom 2")
-        Text(text = "Kolom 3")
-        Text(text = "Kolom 4")
+    Column(modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)) {
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
     }
 }
 
 @Composable
 fun TataLetakRow(modifier: Modifier) {
-    Row(
-        modifier = modifier
-            .fillMaxWidth()
-            .fillMaxHeight(),
-        horizontalArrangement = Arrangement.SpaceEvenly
+    Row(modifier = modifier.fillMaxWidth()
+            .fillMaxHeight(), horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-        Text(text = "Row 1")
-        Text(text = "Row 2")
-        Text(text = "Row 3")
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
     }
 }
 
@@ -111,48 +94,48 @@ fun TataLetakBoxColumn(modifier: Modifier) {
     }
 }
 
-//@Composable
-//fun TataLetakBoxColumnRowImage(modifier: Modifier) {
-//    val gambar = painterResource(id = R.drawable.dok)
-//    Column {
-//        Row(
-//            modifier = modifier.fillMaxWidth(),
-//            horizontalArrangement = Arrangement.SpaceEvenly
-//        ) {
-//            Column {
-//                Text(text = "Kolom1-Baris1")
-//                Text(text = "Kolom1-Baris2")
-//                Text(text = "Kolom1-Baris3")
-//            }
-//            Column {
-//                Text(text = "Kolom2-Baris1")
-//                Text(text = "Kolom2-Baris2")
-//                Text(text = "Kolom2-Baris3")
-//            }
-//        }
-//
-//        Spacer(modifier = Modifier.height(30.dp))
-//
-//        Box(
-//            modifier = modifier
-//                .fillMaxWidth()
-//                .height(130.dp)
-//                .background(color = Color.Cyan),
-//            contentAlignment = Alignment.Center
-//        ) {
-//            Image(
-//                painter = gambar,
-//                contentDescription = null,
-//                contentScale = ContentScale.Fit
-//            )
-//            Text(
-//                text = "Hello Android!",
-//                fontSize = 30.sp,
-//                fontStyle = FontStyle.Italic,
-//                fontFamily = FontFamily.Cursive,
-//                fontWeight = FontWeight.Bold,
-//                color = Color.Black
-//            )
-//        }
-//    }
-//}
+@Composable
+fun TataLetakBoxColumnRowImage(modifier: Modifier) {
+    val gambar = painterResource(id = R.drawable.gambar)
+    Column {
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Column {
+                Text(text = "Kolom1-Baris1")
+                Text(text = "Kolom1-Baris2")
+                Text(text = "Kolom1-Baris3")
+            }
+            Column {
+                Text(text = "Kolom2-Baris1")
+                Text(text = "Kolom2-Baris2")
+                Text(text = "Kolom2-Baris3")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(30.dp))
+
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(130.dp)
+                .background(color = Color.Cyan),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit
+            )
+            Text(
+                text = "Hello Android!",
+                fontSize = 30.sp,
+                fontStyle = FontStyle.Italic,
+                fontFamily = FontFamily.Cursive,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+        }
+    }
+}
