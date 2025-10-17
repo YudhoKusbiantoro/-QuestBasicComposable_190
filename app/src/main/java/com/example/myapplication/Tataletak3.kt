@@ -54,10 +54,13 @@ fun TataLetakBox(modifier: Modifier) {
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .fillMaxHeight(),
-        contentAlignment = Alignment.Center
+            .fillMaxHeight(), contentAlignment = Alignment.Center
     ) {
         Text(text = "Box Center")
+        Text(text = "Column 1")
+        Text(text = "Row 1")
+        Text(text = "Row 2")
+        Text(text = "Colummn 2")
     }
 }
 
