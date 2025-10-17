@@ -139,7 +139,7 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 contentScale = ContentScale.Fit)
             Text(text = "My Music",
                 fontSize = 50.sp,
-                color = Color.Red,
+                color = Color.Blue,
                 fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Cursive,
                 modifier = Modifier.align(
